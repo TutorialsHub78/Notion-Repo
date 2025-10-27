@@ -1,0 +1,40 @@
+# Notion API Python Sample
+
+This sample demonstrates how to connect to Notion using the official Python client.
+
+## Requirements
+
+- Python 3.7 or higher
+- notion-client (`pip install notion-client`)
+- A Notion integration token. Create one at [Notion Integrations](https://www.notion.so/my-integrations).
+
+## Setup
+
+1. Install the Notion Python SDK:
+   ```
+   pip install notion-client
+   ```
+
+2. Obtain your Notion integration token from the Notion website.
+
+3. Set your token as an environment variable:
+   - On Linux/macOS:
+     ```
+     export NOTION_TOKEN=your_secret_token
+     ```
+   - On Windows:
+     ```
+     set NOTION_TOKEN=your_secret_token
+     ```
+
+4. Run the sample Python file. It will use the token to connect to Notion and list accessible databases.
+
+## Usage
+
+- The sample code initializes the Notion client and prints a list of databases your integration can access.
+- You can modify the sample to create pages, update databases, or perform other operations using the Notion API.
+
+## References
+
+- [Notion API Documentation](https://developers.notion.com/)
+- [notion-client on PyPI](https://pypi.org/project/notion-client/)
